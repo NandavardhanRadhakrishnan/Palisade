@@ -1,2 +1,2 @@
 # Palisade
-# A defence against prompt injection
+# A defence against prompt injections
