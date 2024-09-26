@@ -5,7 +5,7 @@ from groq import Groq
 client = Groq()
 
 
-def check_prompt_injection(user_prompt):
+def llmApproach(user_prompt):
     try:
         # Create the completion request to validate the user input
         completion = client.chat.completions.create(
@@ -52,7 +52,7 @@ def check_prompt_injection(user_prompt):
 user_input = input("Enter a prompt to validate for injection: ")
 
 # Call the function and print the result
-output = check_prompt_injection(user_input)
+output = llmApproach(user_input)
 
 # Output should only be true or false if no error occurred
 if output is not None:
